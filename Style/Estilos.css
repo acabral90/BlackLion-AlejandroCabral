@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: forestgreen;
+    font-family:'Kantumruy Pro', sans-serif;
+}
+
+header{
+    background-color: black;
+    font-family:'Kantumruy Pro', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "logo navegador redes"
+    "logo irAlFooter redes";
+    height: 200px;
+}
+
+.logo{
+    grid-area: logo;
+    padding-top: 40px;
+}
+
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+
+.navegador{
+    grid-area: navegador;
+    padding-top: 30px;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.redes img{
+    width: 20px;
+    height: 20px;
+}
+
+.irAlFooter{
+    grid-area: ir al footer;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.irAlFooter img{
+    width: 20px;
+    height: 20px;
+}
+
+nav ul li{
+    border-style: solid;
+    border-color: forestgreen;
+    border-radius: 10px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.cuerpo div img{
+     width: 100%;
+     height: auto;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-areas: 
+    "cultivo"
+    "destacados"
+    "tutorial";
+    gap: 15px;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: 600;
+    
+}
+
+.cultivo{
+    grid-area: cultivo;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destacados{
+    grid-area: destacados;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    }
+
+.destacados h1{
+    font-size: 5vw;
+}
+
+.destacados h3{
+    font-size: 4vw;
+}
+
+.destacados div{
+    width: 40%;
+    height: auto;
+}
+
+.destacados img{
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+}
+
+.tutorial{
+    grid-area: tutorial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.tutorial iframe{
+    width: 70%;
+}
+
+.datos{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "formulario"
+    "contacto";
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    gap:5px;
+}
+
+footer{
+    background-color: black;
+    font-family:'Kantumruy Pro', sans-serif;
+    color: green;
+    display: grid;
+    grid-template-areas: 
+    "categorias contacto"
+    "seguir     seguir"
+    "redes      redes"
+    "mapa       mapa";
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+.categorias{
+    grid-area: categorias;
+    font-size: 3vw;
+}
+
+strong{
+    font-size: x-large;
+}
+
+.categorias ul li a{
+    color: forestgreen;
+}
+
+.contactanos{
+    grid-area: contacto;
+    font-size: 3vw;
+}
+
+
+
+.seguir{
+    grid-area: seguir;
+    text-align: center;
+    padding: 10px;
+}
+
+.redesFooter{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.redesFooter img{
+    width: 35px;
+    height: 35px;
+}
+
+.mapa{
+    grid-area: mapa;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa iframe{
+    width: 65%;
+    height: 190px;
+}
+
+@media (min-width:500px){
+    nav ul li{
+        display: inline-block;
+    }
+
+    .navegador{
+        padding-top: 70px;
+    }
+
+    .logo img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .redes img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .destacados{
+        display: grid;
+        grid-template-areas: 
+        "titulo   titulo"
+        "maceta  nutripack"
+        "sustrato panel";
+        justify-items: center;
+    }
+
+    .titulo{
+        grid-area: titulo;
+    }
+
+    .maceta{
+        grid-area: maceta;
+    }
+
+    .nutripack{
+        grid-area: nutripack;
+    }
+
+    .sustrato{
+        grid-area: sustrato;
+    }
+
+    .panel{
+        grid-area: panel;
+    }
+
+    .datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 300;
+    }
+    
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        margin: 50px;
+    }
+    
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 4fr;
+        gap:5px;
+        margin: 50px;
+    }
+
+    
+
+
+
+}
