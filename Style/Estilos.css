@@ -22,6 +22,11 @@ header{
     height: 200px;
 }
 
+header ul li a:hover{
+    transform: ;
+
+}
+
 .logo{
     grid-area: logo;
     padding-top: 40px;
@@ -30,6 +35,11 @@ header{
 .logo img{
     width: 75px;
     height: 75px;
+    transition: all 2s;
+}
+
+.logo img:hover{
+    transform: scale(1.5);
 }
 
 .navegador{
@@ -49,6 +59,7 @@ header{
     width: 20px;
     height: 20px;
 }
+
 
 .irAlFooter{
     grid-area: ir al footer;
@@ -81,6 +92,7 @@ a{
      width: 100%;
      height: auto;
 }
+
 
 .cuerpo{
     display: grid;

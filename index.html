@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Style/Estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,26 +17,26 @@
 
         <nav class="navegador">
 
-             <ul>
-                <li><a href="./sections/productos.html">Productos</a>
+             <ul data-aos="zoom-in">
+                <li><a href="./sections/productos.html" data-aos="zoom-in">Productos</a>
 
                 </li>
-                <li><a href="./sections/nosotros.html">Nosotros</a>
+                <li><a href="./sections/nosotros.html" data-aos="zoom-in">Nosotros</a>
 
                 </li>
-                <li><a href="./sections/como comprar.html">Cómo comprar?</a>
+                <li><a href="./sections/como comprar.html" data-aos="zoom-in">Cómo comprar?</a>
 
                 </li>
-                <li><a href="./sections/contacto.html">Contacto</a>
+                <li><a href="./sections/contacto.html" data-aos="zoom-in">Contacto</a>
 
                 </li>
             </ul>
         </nav>
 
         <div class="redes">
-            <a href="https://instagram.com/blackliongrowshop?igshid=YmMyMTA2M2Y="><img src="./images/icons8-instagram-50.png" alt="logo instagram"></a>
-            <img src="./images/icons8-facebook-nuevo-50.png" alt="logo facebook">
-            <img src="./images/icons8-whatsapp-50.png" alt="logo whats app">
+            <a href="https://instagram.com/blackliongrowshop?igshid=YmMyMTA2M2Y="><img class="animate__animated animate_headShake" src="./images/icons8-instagram-50.png" alt="logo instagram"></a>
+            <img class="animate__animated animate__headShake" src="./images/icons8-facebook-nuevo-50.png" alt="logo facebook">
+            <img class="animate__animated animate__headShake" src="./images/icons8-whatsapp-50.png" alt="logo whats app">
         </div>
 
         <section class="irAlFooter">
@@ -51,24 +53,32 @@
 
         <section class="destacados">
 
-            <h1 class="titulo">Productos destacados</h1>
+            <h1 class="titulo" data-aos="zoom-in">Productos destacados</h1>
 
-            <div class="maceta">
+            <div class="maceta"  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./images/Maceta.jpg" alt="Maceta roothouse">
                 <h3>Maceta roothouse</h3>
             </div>
             
-            <div class="nutripack">
+            <div class="nutripack" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./images/Nutripack.png" alt="Nutripack">
                 <h3>Nutripack</h3>
             </div>
 
-            <div class="sustrato">
+            <div class="sustrato"  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./images/Sustrato" alt="Santa planta sustrato">
                 <h3>Santa planta sustrato</h3>
             </div>
             
-            <div class="panel">
+            <div class="panel" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./images/Panel bioled.jpg" alt="panel bioled">
                 <h3>Panel led bioled</h3>
             </div>
@@ -91,7 +101,7 @@
 
   <footer id="pie">
 
-      <section class="categorias">
+      <section class="categorias"  data-aos="fade-right">
 
           <strong>Categorias</strong>
 
@@ -112,7 +122,7 @@
 
       </section>
 
-      <section class="contactanos">
+      <section class="contactanos" data-aos="fade-left">
 
           <strong>Contactanos</strong>
 
@@ -149,6 +159,10 @@
     </footer>
 
       
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
