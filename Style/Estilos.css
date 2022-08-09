@@ -11,81 +11,29 @@ body{
     font-family:'Kantumruy Pro', sans-serif;
 }
 
-header{
-    background-color: black;
-    font-family:'Kantumruy Pro', sans-serif;
-    text-align: center;
-    display: grid;
-    grid-template-areas: 
-    "logo navegador redes"
-    "logo irAlFooter redes";
-    height: 200px;
+.navbar{
+    margin-top: 0;
+    padding-top: 0;
 }
 
-header ul li a:hover{
-    transform: ;
-
+.container-fluid{
+    background-color: rgb(69, 192, 99);
+    padding-top: 0;
+    margin-top: 0%;
+    
 }
 
-.logo{
-    grid-area: logo;
-    padding-top: 40px;
-}
-
-.logo img{
-    width: 75px;
-    height: 75px;
-    transition: all 2s;
-}
-
-.logo img:hover{
-    transform: scale(1.5);
-}
-
-.navegador{
-    grid-area: navegador;
-    padding-top: 30px;
-}
-
-.redes{
-    grid-area: redes;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-.redes img{
-    width: 20px;
-    height: 20px;
-}
-
-
-.irAlFooter{
-    grid-area: ir al footer;
-    padding-top: 5px;
-    text-align: center;
-}
-
-.irAlFooter img{
-    width: 20px;
-    height: 20px;
-}
-
-nav ul li{
-    border-style: solid;
-    border-color: forestgreen;
-    border-radius: 10px;
+.container-fluid img{
+    width: 3.5em
 }
 
 ul li{
     list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
+
+.carousel-inner{
+    width: 100%;
 }
 
 .cuerpo div img{
@@ -94,34 +42,18 @@ a{
 }
 
 
-.cuerpo{
-    display: grid;
-    grid-template-areas: 
-    "cultivo"
-    "destacados"
-    "tutorial";
-    gap: 15px;
-}
-
 h1{
     font-size: xx-large;
     font-weight: 600;
     
 }
 
-.cultivo{
-    grid-area: cultivo;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .destacados{
-    grid-area: destacados;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    }
+}
 
 .destacados h1{
     font-size: 5vw;
@@ -132,7 +64,7 @@ h1{
 }
 
 .destacados div{
-    width: 40%;
+    width: 35%;
     height: auto;
 }
 
@@ -186,9 +118,9 @@ h1{
 }
 
 footer{
-    background-color: black;
+    background-color: rgb(69, 192, 99);
     font-family:'Kantumruy Pro', sans-serif;
-    color: green;
+    color: white;
     display: grid;
     grid-template-areas: 
     "categorias contacto"
@@ -210,7 +142,8 @@ strong{
 }
 
 .categorias ul li a{
-    color: forestgreen;
+    color: white;
+    text-decoration: none;
 }
 
 .contactanos{
