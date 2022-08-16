@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600&display=swap');
+@import "fuentes";
+@import "generales";
+@import "index";
 
 
 *{
@@ -6,31 +8,7 @@
     margin: 0;
 }
 
-body{
-    background-color: forestgreen;
-    font-family:'Kantumruy Pro', sans-serif;
-}
 
-.navbar{
-    margin-top: 0;
-    padding-top: 0 !important;
-}
-
-.container-fluid{
-    background-color: rgb(69, 192, 99);
-    padding-top: 0;
-    margin-top: 0%;
-    
-}
-
-.container-fluid img{
-    width: 3.5em;
-}
-
-ul li{
-    list-style-type: none;
-
-}
 
 
 .carousel-inner{
