@@ -1,0 +1,28 @@
+.datos{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "formulario"
+    "contacto";
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    gap:5px;
+}

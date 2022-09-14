@@ -14,9 +14,9 @@
 
     <header>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="./images/Logo-black-lion-grow-shop.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html"><img src="./images/Logo_black_lion_blanco.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,7 +29,7 @@
                     <a class="nav-link" href="./sections/nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./sections/como comprar.html">Cómo comprar</a>
+                    <a class="nav-link" href="./sections/comoComprar.html">Cómo comprar</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./sections/contacto.html">Contacto</a>
@@ -47,71 +47,103 @@
 
     <div class="cuerpo">
 
-      <div class="container">
+        <h1>Black Lion Grow Shop</h1>
 
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img src="./images/promocion.webp" class="d-block w-100" alt="promocion tarjetas">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="./images/Productos para cultivo.png" class="d-block w-100" alt="productos para cultivo">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="./images/Promo semillas.jpg" class="d-block w-100" alt="promocion semillas">
-                  </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
+        <div class="container">
 
-      </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item imgnormalizada active">
+                        <img src="./images/promocion.jpg" class="d-block w-100" alt="promocion tarjetas">
+                    </div>
+                    <div class="carousel-item imgnormalizada">
+                        <img src="./images/Productos para cultivo.png" class="nutripack d-block w-100"
+                            alt="productos para cultivo">
+                    </div>
+                    <div class="carousel-item imgnormalizada">
+                        <img src="./images/Promo semillas.jpg" class="d-block w-100" alt="promocion semillas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
         <section class="destacados">
 
-            <h1 class="titulo">Productos destacados</h1>
+            <h1>Productos destacados</h1>
 
-            <div class="maceta">
-                <img src="./images/Maceta.jpg" alt="Maceta roothouse">
-                <h3>Maceta roothouse</h3>
+            <div class="productosDestacados">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/Sustrato santa planta super mix 50L.jpg" alt="sustrato">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustrato santa planta</h5>
+                        <p class="card-text"> Sustrato santa planta super mix 50L. 100% orgánico.
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/Nutripack namaste.jpg"
+                        alt="Nutripack namaste fertilizante organico">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutripack namaste</h5>
+                        <p class="card-text">Nutripack namaste kit orgánico completo.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/Maceta root house 10L.jpg" alt="maceta 10 litros">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceta root house 10L</h5>
+                        <p class="card-text">Maceta para cultivo inddor root house autopoda + plato.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./images/Panel led 300w.jpg" alt="panel led 300w">
+                    <div class="card-body">
+                        <h5 class="card-title">Panel led 300w</h5>
+                        <p class="card-text">Panel led 300w para cultivo indoor, floración y crecimiento.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        
+        <section class="tutoriales">
+
+            <h1>
+                Tutoriales
+            </h1>
+
+            <div class="tutorial"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uHlA-__E_5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
             
-            <div class="nutripack">
-                <img src="./images/Nutripack.png" alt="Nutripack">
-                <h3>Nutripack</h3>
-            </div>
-
-            <div class="sustrato">
-                <img src="./images/Sustrato" alt="Santa planta sustrato">
-                <h3>Santa planta sustrato</h3>
-            </div>
-
-            <div class="panel">
-                <img src="./images/Panel bioled.jpg" alt="panel bioled">
-                <h3>Panel led bioled</h3>
-            </div>
-
-           
-
         </section>
-
-        
 
     </div>
 
-  <footer id="pie">
+  <footer>
 
            <div class="categorias-contactanos">
 
-               <section class="categorias" data-aos="fade-right">
+               <section class="categorias">
 
                    <strong>Categorias</strong>
 
@@ -132,7 +164,7 @@
 
                </section>
 
-               <section class="contactanos" data-aos="fade-left">
+               <section class="contactanos">
 
                    <strong>Contactanos</strong>
 
@@ -152,7 +184,7 @@
 
               <div class="iconosRedes">
 
-                  <a href="https://instagram.com/blackliongrowshop?igshid=YmMyMTA2M2Y="><img src="./images/icons8-instagram-50.png" alt="instagram"></a>
+                  <a href="https://instagram.com/blackliongrowshop?igshid=YmMyMTA2M2Y="><img src="./images/icons8-instagram-50 (1).png" alt="instagram"></a>
 
                   <img src="./images/icons8-facebook-nuevo-50.png" alt="facebook">
 

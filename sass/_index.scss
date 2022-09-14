@@ -1,0 +1,71 @@
+.cuerpo {
+    
+    background-color: rgb(207, 225, 185);
+
+    h1{
+        text-align: center;
+        padding: 1em;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        font-size: 2.4em;
+    }
+    
+    .imgnormalizada{
+
+        img {
+        width: auto;
+        height: 250px;
+        max-height: 250px;
+        }
+
+        .nutripack{
+            background-color: black;
+        }
+
+    }
+
+    .productosDestacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .card img {
+            height: 286px;
+        }
+
+        @media (min-width:600px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            gap: 15px;
+        }
+    }
+
+
+}
+
+.tutoriales{
+
+
+    .tutorial{
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        iframe{
+            width: 70%;
+            margin: auto ;
+            padding-bottom: 60px;
+        }
+
+
+
+    }
+
+}
+
+
+
+
+

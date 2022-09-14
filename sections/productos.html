@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Style/Estilos.css">
+    <link rel="stylesheet" href="../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+
+<body class="cuerpoProductos">
 
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../images/Logo-black-lion-grow-shop.png" alt="logo"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../images/Logo_black_lion_blanco.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -27,7 +28,7 @@
                     <a class="nav-link" href="../sections/nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../sections/como comprar.html">Cómo comprar</a>
+                    <a class="nav-link" href="../sections/comoComprar.html">Cómo comprar</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../sections/contacto.html">Contacto</a>
@@ -43,9 +44,9 @@
 
     </header>
 
-    <main>
+    <h1>Productos</h1>
 
-        <h1>Productos</h1>
+    <aside class="categoriasProductos">
 
         <ul>
             <li>Sustratos y complementos</li>
@@ -55,29 +56,55 @@
             <li>Parafernalia</li>
         </ul>
 
-    </main>
+    </aside>
 
     <section class="productos">
 
-        <img src="../images/Grow-Mix-Multipro-80-Litros-Sustrato-Profesional-para-Indoor-250x250.jpg" alt="Grow mix sustrato profesional">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../images/Grow-Mix-Multipro-80-Litros-Sustrato-Profesional-para-Indoor-250x250.jpg" alt="sustrato">
+        <div class="card-body">
+            <h5 class="card-title">Sustrato grow mix multipro 80L</h5>
+            <p class="card-text"> Sustrato profesional terra fertil grow mix multipro 80l. 100% orgánico.
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
 
-        <h3>Grow mix multi pro 80 lts</h3>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../images/Cooler-VT-4-pulgadas-1-30000-280x280.jpg" alt="sustrato">
+        <div class="card-body">
+            <h5 class="card-title">Cooler VT 4 pulgadas</h5>
+            <p class="card-text"> Turbina cooler fan extractor 220v 4 pulgadas 120x38mm.
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
 
-        <img src="../images/Cooler-VT-4-pulgadas-1-30000-280x280.jpg" alt="Cooler VT 4 pulgadas">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../images/Panel led 300w.jpg" alt="sustrato">
+        <div class="card-body">
+            <h5 class="card-title">Panel led 300w</h5>
+            <p class="card-text"> Panel led 300w para cultivo indoor, floración y crecimiento.
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
 
-        <h3>Cooler VT 4 pulgadas</h3>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../images/Pack-Fertilizantes-Grow-Micro-Bloom-Advance-Nutrients-1-Litro-1-280x280.jpg" alt="sustrato">
+        <div class="card-body">
+            <h5 class="card-title">Tripack advanced nutrientes 500ml</h5>
+            <p class="card-text"> Pack x 3 fertilizantes grow, micro, bloom 500ml.
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
 
-        <img src="../images/Iluminacion-Led-Cob-Full-Spectrum-300w.jpg" alt="Led Cob full spectrum 300w">
 
-        <h3>Led Cob full spectrum 300w</h3>
-
-        <img src="../images/Pack-Fertilizantes-Grow-Micro-Bloom-Advance-Nutrients-1-Litro-1-280x280.jpg" alt="Pack fertilizantes">
-
-        <h3>Pack fertilizantes grow micro bloom advance</h3>
 
     </section>
 
-    <footer id="pie">
+    <footer>
 
         <div class="categorias-contactanos">
 
@@ -123,7 +150,7 @@
             <div class="iconosRedes">
 
                 <a href="https://instagram.com/blackliongrowshop?igshid=YmMyMTA2M2Y="><img
-                        src="../images/icons8-instagram-50.png" alt="instagram"></a>
+                        src="../images/icons8-instagram-50 (1).png" alt="instagram"></a>
 
                 <img src="../images/icons8-facebook-nuevo-50.png" alt="facebook">
 

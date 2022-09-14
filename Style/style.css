@@ -1,39 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: forestgreen;
-  font-family: "Kantumruy Pro", sans-serif;
+  background-color: rgb(183, 228, 199);
 }
 
 .navbar {
   margin-top: 0;
   padding-top: 0 !important;
+  border: solid 1px black;
 }
-
-.container-fluid {
-  background-color: rgb(69, 192, 99);
+.navbar .container-fluid {
+  background-color: whitesmoke;
   padding-top: 0;
   margin-top: 0%;
+  width: 100%;
 }
-
-.container-fluid img {
-  width: 3.5em;
+.navbar .container-fluid img {
+  width: 5.5em;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar .container-fluid img {
+    width: 7.5em;
+  }
 }
 
 ul li {
   list-style-type: none;
-}
-
-.carousel-inner {
-  width: 100%;
-}
-
-.cuerpo div img {
-  width: 100%;
-  height: 20em;
 }
 
 h1 {
@@ -41,44 +42,99 @@ h1 {
   font-weight: 600;
 }
 
-.destacados {
+.cuerpo {
+  background-color: rgb(207, 225, 185);
+}
+.cuerpo h1 {
+  text-align: center;
+  padding: 1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+.cuerpo .imgnormalizada img {
+  width: auto;
+  height: 250px;
+  max-height: 250px;
+}
+.cuerpo .imgnormalizada .nutripack {
+  background-color: black;
+}
+.cuerpo .productosDestacados {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
-.destacados h1 {
-  font-size: 5vw;
+.cuerpo .productosDestacados .card img {
+  height: 286px;
+}
+@media (min-width: 600px) {
+  .cuerpo .productosDestacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 15px;
+  }
 }
 
-.destacados h3 {
-  font-size: 4vw;
-}
-
-.destacados div {
-  width: 35%;
-  height: auto;
-}
-
-.destacados img {
-  width: 100%;
-  height: auto;
-  border-style: solid;
-  border-color: black;
-  border-width: 4px;
-}
-
-.tutorial {
-  grid-area: tutorial;
+.tutoriales .tutorial {
+  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 30px;
 }
-
-.tutorial iframe {
+.tutoriales .tutorial iframe {
   width: 70%;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: rgb(61, 143, 106);
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+footer .categorias-contactanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .categorias-contactanos .categorias {
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+footer .categorias-contactanos .categorias strong {
+  font-size: 3vw;
+}
+footer .categorias-contactanos .categorias a {
+  color: white;
+  text-decoration: none;
+}
+footer .categorias-contactanos .contactanos {
+  font-size: 2vw;
+}
+footer .categorias-contactanos .contactanos strong {
+  font-size: 3vw;
+}
+footer .categorias-contactanos .contactanos p {
+  margin-bottom: 0;
+}
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .redes .iconosRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .redes .iconosRedes img {
+  width: 35px;
+  height: 35px;
 }
 
 .datos {
@@ -107,110 +163,21 @@ h1 {
   gap: 5px;
 }
 
-footer {
-  background-color: rgb(69, 192, 99);
-  font-family: "Kantumruy Pro", sans-serif;
-  color: white;
-}
-
-.categorias-contactanos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.categorias {
-  font-size: 2vw;
-  display: flex;
-  flex-direction: column;
-}
-
-strong {
-  font-size: x-large;
-  font-size: 3vw;
-}
-
-.categorias ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.contactanos {
-  font-size: 2vw;
-}
-
-.contactanos p {
-  margin-bottom: 0;
-}
-
-.seguir {
+.cuerpoProductos h1 {
   text-align: center;
-  padding: 10px;
-}
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.iconosRedes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.redes img {
-  width: 35px;
-  height: 35px;
-}
-
-.mapa {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mapa iframe {
-  width: 65%;
-  height: 190px;
+  padding: 1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 2.4em;
 }
 
 @media (min-width: 500px) {
   nav ul li {
     display: inline-block;
   }
-  .navegador {
-    padding-top: 70px;
-  }
-  .logo img {
-    width: 120px;
-    height: 120px;
-  }
   .redes img {
     width: 40px;
     height: 40px;
-  }
-  .destacados {
-    display: grid;
-    grid-template-areas: "titulo   titulo" "maceta  nutripack" "sustrato panel";
-    justify-items: center;
-  }
-  .titulo {
-    grid-area: titulo;
-  }
-  .maceta {
-    grid-area: maceta;
-  }
-  .nutripack {
-    grid-area: nutripack;
-  }
-  .sustrato {
-    grid-area: sustrato;
-  }
-  .panel {
-    grid-area: panel;
   }
   .datos {
     display: flex;

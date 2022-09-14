@@ -1,0 +1,59 @@
+footer{
+    padding-top: 30px;
+    background-color: rgb(61, 143, 106);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    color: white;
+    
+    .categorias-contactanos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .categorias{
+            font-size: 2vw;
+            display: flex;
+            flex-direction: column;
+            
+            strong{
+                font-size: 3vw;
+            }
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+        .contactanos{
+            font-size: 2vw;
+
+            strong{
+                font-size: 3vw;
+            }
+            
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .iconosRedes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            img{
+                 width: 35px;
+                 height: 35px;
+                }
+           
+        }
+        
+    }
+}
