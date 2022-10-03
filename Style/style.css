@@ -171,6 +171,35 @@ footer .redes .iconosRedes img {
   font-size: 2.4em;
 }
 
+main h1 {
+  text-align: center;
+  padding: 1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+main .contNosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+main .contNosotros img {
+  width: 16em;
+}
+main .contNosotros .contNosotros1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(61, 143, 106);
+  padding: 5px;
+}
+main .contNosotros .contNosotros2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 @media (min-width: 500px) {
   nav ul li {
     display: inline-block;
