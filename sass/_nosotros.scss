@@ -11,25 +11,45 @@ main{
         
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 50px;
         padding: 15px;
+        font-family: 'Kanit', sans-serif;
         
         img{
             width: 16em;
         }
 
         .contNosotros1{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        background-color: rgb(61, 143, 106);
-        padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(149, 213, 178);
+            gap: 10px;
+            padding: 10px;
+            border-radius: 20px;
+        
+            @media (min-width: 500px){ 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            }
         }
 
         .contNosotros2{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(149, 213, 178);
+            gap: 10px;
+            padding: 10px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+        
+            @media (min-width: 500px){
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;   
+            }
         }
     }
 }

@@ -78,15 +78,15 @@ h1 {
   }
 }
 
-.tutoriales .tutorial {
-  margin: auto;
+.tutoriales {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.tutoriales .tutorial iframe {
-  width: 70%;
-  margin: auto;
-  padding-bottom: 60px;
+.tutoriales .tutorial {
+  width: 75%;
+  margin: 50px;
+  height: 300px;
 }
 
 footer {
@@ -138,37 +138,88 @@ footer .redes .iconosRedes img {
 }
 
 .datos {
-  display: grid;
-  grid-template-areas: "titulo" "formulario" "contacto";
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 500px) {
+  .datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 300;
+  }
 }
 
 .titulo {
-  grid-area: titulo;
   font-size: 1.5em;
   text-align: center;
 }
 
 .contacto {
-  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .formulario {
-  grid-area: formulario;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 4fr;
   gap: 5px;
+  padding: 20px;
+  margin: 50px;
+  font-family: "Kanit", sans-serif;
+}
+.formulario button {
+  border-radius: 5px;
+  background-color: rgb(187, 242, 187);
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .mapa {
+  margin: 50px;
+  height: 220px;
+  width: 75%;
+}
+
+.cuerpoProductos {
+  font-family: "Kanit", sans-serif;
+}
 .cuerpoProductos h1 {
   text-align: center;
   padding: 1em;
-  font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-size: 2.4em;
+}
+.cuerpoProductos .categoriasProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(187, 242, 187);
+}
+.cuerpoProductos ul li {
+  text-align: center;
+}
+.cuerpoProductos .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  .cuerpoProductos .productos {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 main h1 {
@@ -181,23 +232,69 @@ main h1 {
 main .contNosotros {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 50px;
   padding: 15px;
+  font-family: "Kanit", sans-serif;
 }
 main .contNosotros img {
   width: 16em;
 }
 main .contNosotros .contNosotros1 {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
-  background-color: rgb(61, 143, 106);
-  padding: 5px;
+  background-color: rgb(149, 213, 178);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+@media (min-width: 500px) {
+  main .contNosotros .contNosotros1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 main .contNosotros .contNosotros2 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
+  background-color: rgb(149, 213, 178);
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+@media (min-width: 500px) {
+  main .contNosotros .contNosotros2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.contComprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contComprar p {
+  padding: 10px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+.contComprar .cajasComprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(187, 242, 187);
+  border-radius: 20px;
+}
+.contComprar .linea {
+  background-color: grey;
+  height: 1px;
+  width: 250px;
+  margin: 0 auto 20px auto;
 }
 
 @media (min-width: 500px) {
@@ -207,25 +304,5 @@ main .contNosotros .contNosotros2 {
   .redes img {
     width: 40px;
     height: 40px;
-  }
-  .datos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-weight: 300;
-  }
-  .contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    margin: 50px;
-  }
-  .formulario {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 4fr;
-    gap: 5px;
-    margin: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

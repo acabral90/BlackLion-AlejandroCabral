@@ -1,33 +1,61 @@
 //E-Comerce Black Lion Grow Shop
 
-
-
-function precioConDescuento (){
-    let montoAbonado = parseInt(prompt("Cual es el monto del producto que elegiste?"));
-    let cuotas = parseInt(prompt("En cuantas cuotas quieres hacer el pago? Tenemos 3 cuotas sin interes. 6 con 15% de interes y 12 con 30% de interes!"));
-    let precioCuota = montoAbonado / cuotas  
-    switch (cuotas){
-            case 3:
-                alert(`Abonaras 3 cuotas sin interes de ${precioCuota} `)
-                break;
-        
-        
-            case 6:
-                alert(`En 6 cuotas tenes un 15% de interes. Abonaras cuotas de ${precioCuota + (precioCuota * 15/100)}`)
-                break;
-        
-
-            case 12:
-                alert(`En ${cuotas} tenes un 30% de interes. Abonaras cuotas de ${precioCuota + (precioCuota * 30/100)}`)
-                break;
-
-            default:
-                alert(`Solamente podemos ofrecerte 3, 6 o 12 cuotas`)
-                break; 
-        }
-        
-            
-    
+//primero declaro el constructor
+class Producto {
+    constructor(nombre, precio) {
+        this.nombre = nombre; 
+        this.precio = precio;
+    }
 }
 
-precioConDescuento ();
+//luego declaro el array donde se almacenaran los productos que elijo
+
+const productosCarrito = []; 
+
+//creo una funcion en donde creo los productos y los almaceno en el array ya mencionado
+
+const agregarCarrito = () => {
+    let nombre = prompt("Que producto deseas?");
+    let precio = parseFloat(prompt("Indique el valor del producto"));
+
+    let productoAgregado = new Producto (nombre, precio);
+
+    productosCarrito.push(productoAgregado);
+
+    let seguirAgregando = prompt("Desea agregar mas productos al carrito de compras?");
+
+    if(seguirAgregando == "si"){
+        agregarCarrito();
+        
+        if(seguirAgregando == "no"){
+            carrito();
+        }
+
+        else{
+            alert("Debe indicar si desea o no seguir agregando productos al carrito");
+        }
+    }
+}
+
+//creo una funcion para sumar los precios de losproductos
+
+const carrito = ()=>{
+    const precios = productosCarrito.map(function(prod){
+        alert(prod.precio)
+    });
+
+    let suma = 0;
+
+    for(const total of precios){
+        suma += total;
+        alert(suma);
+    }
+
+}
+
+
+agregarCarrito();
+
+carrito();
+
+

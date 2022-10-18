@@ -42,27 +42,18 @@
         }
     }
 
-
 }
 
 .tutoriales{
-
-
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
     .tutorial{
-        margin: auto;
-        display: flex;
-        align-items: center;
-
-        iframe{
-            width: 70%;
-            margin: auto ;
-            padding-bottom: 60px;
-        }
-
-
-
+        width: 75%;
+        margin: 50px;
+        height: 300px;
     }
-
 }
 
 

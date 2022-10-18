@@ -1,28 +1,56 @@
 .datos{
-    display: grid;
-    grid-template-areas: 
-    "titulo"
-    "formulario"
-    "contacto";
-    gap: 20px;
-    justify-items: center;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+    @media (min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight: 300;
+    }
 }
 
 .titulo{
-    grid-area: titulo;
     font-size: 1.5em;
     text-align: center;
 }
 
 .contacto{
-    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:500px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .formulario{
-    grid-area: formulario;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 4fr;
     gap:5px;
+    padding: 20px;
+    margin: 50px;
+    font-family: 'Kanit', sans-serif;
+
+    button{
+        border-radius: 5px;
+        background-color: rgb(187, 242, 187);
+    }       
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mapa{
+    margin: 50px; 
+    height: 220px;
+    width: 75%;
+    }    
+}   
+    
+    
