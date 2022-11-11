@@ -52,6 +52,9 @@ h1 {
   font-weight: 400;
   font-size: 2.4em;
 }
+.cuerpo .carritoLienzo {
+  position: fixed;
+}
 .cuerpo .imgnormalizada img {
   width: auto;
   height: 250px;
@@ -191,6 +194,10 @@ section .mapa {
   width: 75%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .cuerpoProductos {
   font-family: "Kanit", sans-serif;
 }
@@ -200,26 +207,33 @@ section .mapa {
   font-weight: 400;
   font-size: 2.4em;
 }
-.cuerpoProductos .categoriasProductos {
+.cuerpoProductos .contenedorIconoCarrito {
+  margin-right: 20px;
+}
+.cuerpoProductos .contenedorIconoCarrito .iconoCarrito {
+  font-size: 25px;
+}
+.cuerpoProductos .contenedorCarrito {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
-  background-color: rgb(187, 242, 187);
 }
-.cuerpoProductos ul li {
+.cuerpoProductos .contenedorCarrito .parrafoCarrito {
+  font-family: "Kanit", sans-serif;
   text-align: center;
+  font-weight: 400;
 }
-.cuerpoProductos .productos {
+.cuerpoProductos .contenedorCarrito .contenedorOffcanvas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
-@media (min-width: 600px) {
-  .cuerpoProductos .productos {
-    display: flex;
-    flex-direction: row;
-  }
+.cuerpoProductos .botonesCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 90%;
+  gap: 3px;
 }
 
 main h1 {
@@ -295,6 +309,11 @@ main .contNosotros .contNosotros2 {
   height: 1px;
   width: 250px;
   margin: 0 auto 20px auto;
+}
+
+.card-img-top {
+  width: 286px;
+  height: 180px;
 }
 
 @media (min-width: 500px) {
