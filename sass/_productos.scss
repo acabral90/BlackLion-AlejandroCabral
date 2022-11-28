@@ -19,6 +19,17 @@ body{
             font-size: 25px;
         }
     }
+
+    .contProd{
+        display: flex;
+        gap: 7px;
+        
+        .card-img-top{
+            width: 100px;
+            height: 200px;
+        }
+        
+    }
     
     .contenedorCarrito{
         display: flex;
@@ -43,7 +54,6 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-top: 90%;
         gap: 3px;
 
     }

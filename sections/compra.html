@@ -7,6 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('HIiEs06ssb7Mlw_uX')
+  </script>
 </head>
 <body>
 
@@ -35,36 +42,13 @@
                 </ul>
               </div>
 
-              <a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample" class="contenedorIconoCarrito">
-                <i class="bi bi-cart-fill iconoCarrito" id="iconoCarrito">0</i>
-              </a>
-              
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de compras</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div class= "contenedorCarrito" id="contenedorCarrito">
-                    
-                  </div>
-
-                  <div class="botonesCarrito">
-                    <button type="button" class="btn btn-warning botonVaciar">Vaciar carrito</button>
-                    <button type="button" class="btn btn-info botonContinuar">Continuar compra</button>
-                    <p>Precio total: </p>
-                    <p id="precioTotal">0</p>
-                  </div>
-
-                </div>
-              </div>
-
-
 
             </div>
         </nav>
 
     </header>
+
+    <button class="botonActivar" id="activarFuncion">Click</button>
 
     <h1>Carrito de compras</h1>
 
@@ -74,6 +58,7 @@
                 <tr>
                     <th scope="col">Imagen</th>
                     <th scope="col">Nombre</th>
+                    <th scope="col">Cantidad</th>
                     <th scope="col">Precio</th>
                 </tr>
 
@@ -82,23 +67,71 @@
 
             </tbody>
             <tr>
-                <th colspan="4" scope="col" class="text-right">TOTAL
+                <th></th>
+                <th></th>
+                <th></th>
+                <th scope="col">Total
                     <p id="totalProceso"></p>
                 </th>
-                <!-- <th scope="col"></th> -->
             </tr>
 
         </table>
     </div>
 
-    <div class="col-xs-12 col-md-4">
-        <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra" >
+    <div class="d-flex flex-row-reverse">
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Finalizar compra
+      </button>
    </div>
+   
+   <form id="formulario">
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalLabel">Finalizar compra</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <div class="form-floating mb-3">
+               <input type="text" name="nombreYapellido" class="form-control nombreYapellido" id="nombreYapellido" placeholder="nombreYapellido">
+               <label for="nombreYapellido">Nombre y Apellido</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="text" name="domicilio" class="form-control domicilio"  id="domicilio" placeholder="Domicilio">
+               <label for="domicilio">Domicilio</label>
+             </div>
+             <div class="row g-3 mb-3">
+               <div class="form-floating col-md-8">
+                 <input type="text" name="localidad" class="form-control localidad" id="localidad" placeholder="Localidad">
+                 <label for="localidad">Localidad</label>
+               </div>
+               <div class="form-floating col-md-4">
+                 <input type="text" name="provincia" class="form-control provincia" id="provincia" placeholder="Localidad">
+                 <label for="provincia">Provincia</label>
+               </div>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="email" name="correo" class="form-control email" id="correo" placeholder="name@example.com">
+               <label for="correo">Correo electrónico</label>
+             </div>
+
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+             <button type="input" class="btn btn-warning" data-bs-dismiss="modal" id="botonComprar">Comprar</button>
+           </div>
+         </div>
+       </div>
+     </div>
+   </form>
 
     
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="../main.js"></script>
 

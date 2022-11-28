@@ -213,6 +213,14 @@ body {
 .cuerpoProductos .contenedorIconoCarrito .iconoCarrito {
   font-size: 25px;
 }
+.cuerpoProductos .contProd {
+  display: flex;
+  gap: 7px;
+}
+.cuerpoProductos .contProd .card-img-top {
+  width: 286px;
+  height: 180px;
+}
 .cuerpoProductos .contenedorCarrito {
   display: flex;
   flex-direction: column;
@@ -232,7 +240,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 90%;
   gap: 3px;
 }
 
@@ -311,9 +318,12 @@ main .contNosotros .contNosotros2 {
   margin: 0 auto 20px auto;
 }
 
-.card-img-top {
-  width: 286px;
-  height: 180px;
+.imagenCarrito {
+  width: 180px;
+}
+
+.botonActivar {
+  opacity: 0;
 }
 
 @media (min-width: 500px) {
