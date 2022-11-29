@@ -2,9 +2,9 @@ const listaProductos = [
 
 {
     id:1,
-    nombre: "Sustrato grow mix multipro 80 L.",
+    nombre: "Sustrato grow mix multipro 80 litros.",
     cantidad: 1,
-    desc: "Sustrato profesional Terra Fertil grow mix multipro 80l. 100% orgánico.",
+    desc: "Sustrato profesional Terra Fertil grow mix multipro 80 litros. 100% orgánico.",
     precio: 3500,
     img: "../images/sustratoGrowmix80.jpg",
 },
@@ -41,6 +41,30 @@ const listaProductos = [
     precio: 800,
     img: "../images/maceta_geotextil_eden_10litros.jpg",
 },
+{
+    id:6,
+    nombre: "Redutor PH Namaste 500ml.",
+    cantidad: 1,
+    desc: "Redcutor de PH Namaste a base de ácidos orgánicos 500ml.",
+    precio: 1015,
+    img: "../images/reductor_ph_namaste.jpg"
+},
+{
+    id:7,
+    nombre: "Timer temporizador Zurich",
+    cantidad: 1,
+    desc: "Temporizador programable para encendido y apagado. 220v. Zurich.",
+    precio: 1650,
+    img: "../images/timer_temporizador.jpg"
+},
+{
+    id:8,
+    nombre: "Humus de lombriz JuaniJuana 10 litros.",
+    cantidad: 1,
+    desc: "Humus de lombriz 100% orgánico JuaniJuana 10 litros.",
+    precio: 780,
+    img: "../images/humus_de_lombriz.jpg"
+}
 
 ]
 
@@ -51,7 +75,7 @@ listaProductos.forEach((productos) => {
     if(contenedorProductos){
     contenedorProductos.innerHTML += `
     <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="${img}" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="${img}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${nombre}</h5>
     <p class="card-text">Precio: ${precio}</p>
@@ -236,9 +260,6 @@ function continuarCompra() {
     totalProceso.innerText = carrito.reduce(
       (acc, prod) => acc + prod.cantidad * prod.precio, 0);
 };
-
-
-
 
 if(formulario){
 formulario.addEventListener("submit", comprar)
